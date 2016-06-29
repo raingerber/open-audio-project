@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #FF8374;
+  height: 100%;
+}
+
+body {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+#footer {
+
+}
+
+#footer > .button-panel {
+	display: none; /* these will be shown using js when the audio loads */
+	padding: 15px;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {
+	content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+hr {
+	margin: 1% 0% 0%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
+}
+
+.window {
+	/*display: none;*/
+	padding: 10px;
+	flex: 1 1 auto;
+	overflow: auto;
+}
+
+.podcast_info {
+	padding-top: 10px;
+	border-bottom: 1px solid white;
+	padding-left: 5%;
+	height: 90px;
+}
+
+.podcast_image {
+  display: none;
+}
+
+.podcast_title {
+    text-align: left;
+    padding: 1% 0 0% 0%;
+    font-size: 30px;
+}
+
+.podcast_episode {
+  text-align: left;
+  font-size: 19px;
+  padding-bottom: 1%;
+}
+
+.info_card {
+	max-height: 500px;
+	overflow: hidden;
+	background-color: #fda094;
+  display: block;
+  float: left;
+  border-radius: 5px;
+  margin: 2% 0% 0% 2%;
+  padding: 2%;
+  width: 96%;
+}
+
+.info_picture {
+	float: left;
+	width: 23%;
+  border-radius: 5px;
+}
+
+.not_picture {
+  margin-left: 26%;
+}
+
+.info_type {
+  text-align: left;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: -2%;
+  line-height: 60px;
+}
+
+.info_headline {
+	text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.info_description {
+	text-align: left;
+}
+
+.audio {
+	width: 100%;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+	.podcast_info {
+		margin: 0;
+		height: 130px;
+	}
+
+	.podcast_title {
+		font-size: 40px;
+	}
+
+	.podcast_episode {
+		font-size: 30px;
+	}
+
+	.info_card {
+		width: 46%;
+	}
+
+	.info_type {
+		font-size: 40px;
+	}
+
+	.podcast_image {
+	  float: left;
+		padding: 2% 2% 0% 2%;
+	  width: 11%;
+	  display: inherit;
+	}
+
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+
+}
